@@ -3,7 +3,8 @@ module DisplayName
 
   
   def display_name
-    name.titlecase if !name.blank?
+    return name if !name.blank?
+    username
   end
 
   def short_display_name
